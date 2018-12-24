@@ -1,6 +1,35 @@
 @import 'core/settings';
 
-body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
-	height: 100vh;
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.card{
+  width: 80%;
+  height: 60vh;
+  margin: auto;
+}
+
+.title--intro{}
+
+.title {
+  font-size: 20px;
+  color: red;
+}
+
+.img{
+  max-width: 80%;
+  max-height: 60%;
+}
+
+.video{
+  max-width: 80%;
+  max-height: 60%;
+}
+
+.btn{
+  font-size: 20px;
+  color: red;
 }
