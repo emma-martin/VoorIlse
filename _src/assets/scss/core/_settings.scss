@@ -1,1 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Faster+One|Lato:300');
+
+$font-main: 'Faster One', cursive;
+$font-secondary: 'Lato', sans-serif;
+
+
 $color-white: #f3f4f5;
+
+//vaporwave light palette
+$color-highcue: #ff71ce;
+$color-back: #01cdfe;
+$color-light: #05ffa1;
+$color-dark: #b967ff;
+$color-pastel: #fffb96;
+
+
+
+@mixin fontBtn {
+  font-family: $font-main;
+  font-size: 22px;
+  color: $color-dark;
+}
+
+
+
+@mixin font {
+  font-family: $font-secondary;
+  font-size: 45px;
+  color: $color-highcue;
+  padding: 10px;
+}
