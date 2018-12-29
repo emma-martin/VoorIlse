@@ -29,6 +29,11 @@ body{
   display: flex;
 }
 
+.main__href{
+  text-decoration: none;
+  display: flex;
+  margin-left: auto;
+}
 .page__header {
   background: url('../images/skyline.jpg');
   background-position: top;
@@ -116,10 +121,8 @@ body{
   border: 0;
   padding: 0;
   margin: 1.8rem;
-  height:80px;
-  line-height: 65px;
   display: inline-block;
-  letter-spacing: 4px;
+  letter-spacing: 8px;
   position: relative;
   font-size: 1.45rem;
   transition: opacity .3s, z-index .3s step-end, -webkit-transform .3s;
@@ -151,10 +154,10 @@ button.btn.striped-shadow:after, button.btn.striped-shadow:before {
   background-image: linear-gradient(
     135deg,
     transparent 0,
-    transparent 5px,
-    $color-back 5px,
-    $color-back 10px,
-    transparent 10px
+    transparent 9px,
+    $color-back 9px,
+    $color-back 16px,
+    transparent 16px
   );
   content: '';
   display: block;

@@ -17,7 +17,7 @@ $color-pastel: #fffb96;
 
 @mixin fontBtn {
   font-family: $font-main;
-  font-size: 22px;
+  font-size: 29px;
   color: $color-dark;
 }
 
@@ -25,7 +25,7 @@ $color-pastel: #fffb96;
 
 @mixin font {
   font-family: $font-secondary;
-  font-size: 45px;
+  font-size: 48px;
   color: $color-highcue;
   padding: 10px;
 }
