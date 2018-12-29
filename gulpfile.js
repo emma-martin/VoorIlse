@@ -173,6 +173,14 @@ gulp.task('icons-dist', function(done) {
   done();
 });
 
+// >> Copy json files
+gulp.task('json-dist', function(done) {
+  gulp.src(config.json.src)
+    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(gulp.dest(config.json.dist));
+  done();
+});
+
 
 
 // > Watchers + BrowserSync server
@@ -193,8 +201,8 @@ gulp.task('default', gulp.series(['clean','html', 'styles','scripts', 'images', 
 
 
 
-// > Build a production-ready version of your proyect
-gulp.task('docs', gulp.series(['clean-dist','html-dist','styles-dist','scripts-dist', 'images-dist', 'icons-dist'], function(done) {
+// > Build a production-ready version of your project
+gulp.task('docs', gulp.series(['clean-dist','html-dist','styles-dist','scripts-dist', 'images-dist', 'icons-dist', 'json-dist'], function(done) {
   console.log('🦄 Build OK!');
   done();
 }));
